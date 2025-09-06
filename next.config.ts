@@ -2,9 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   // Configuration for production deployment
-  experimental: {
-    serverComponentsExternalPackages: ['@e2b/code-interpreter']
-  },
+  serverExternalPackages: ['@e2b/code-interpreter'],
   // Enable CORS for API routes
   async headers() {
     return [
